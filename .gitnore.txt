@@ -1,0 +1,25 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore temporary files created by IDEs
+.vscode/
+.idea/
+
+# Ignore MySQL dump files
+*.sql
+
+# Ignore database credentials or configuration files
+config/database.properties
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore other backup or temporary files
+*.bak
+*.swp
+*.sublime-workspace
+*.sublime-project

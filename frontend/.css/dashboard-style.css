@@ -1,0 +1,77 @@
+/* Dashboard styling */
+.dashboard-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    font-size: 18px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #45a049;
+}
+
+/* Main content */
+.dashboard-main {
+    margin-left: 270px;
+    padding: 30px;
+}
+
+/* Section header */
+.dashboard-main h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Student performance and fee table */
+.performance-table, .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.performance-table th, .fee-table th, .performance-table td, .fee-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.performance-table th, .fee-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

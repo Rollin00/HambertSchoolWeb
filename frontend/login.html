@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HAMBERT SCHOOL COMPLEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/school-logo.png" alt="Hambert School Complex Logo" class="logo-img">
+            <h1>HAMBERT SCHOOL COMPLEX</h1>
+        </div>
+    </header>
+
+    <main class="login-page">
+        <h2>Login</h2>
+        <p>Please select your role and log in to your account.</p>
+
+        <form action="dashboard.html" method="post" class="login-form">
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="parent">Parent</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Login</button>
+        </form>
+
+        <div class="help-links">
+            <p><a href="#">Forgot your password?</a></p>
+            <p><a href="#">Need help logging in?</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HAMBERT SCHOOL COMPLEX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

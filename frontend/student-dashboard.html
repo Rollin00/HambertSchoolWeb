@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - HAMBERT SCHOOL COMPLEX</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/school-logo.png" alt="Hambert School Complex Logo" class="logo-img">
+            <h1>HAMBERT SCHOOL COMPLEX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#grades">Grades</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section id="profile" class="card">
+            <h2>Student Profile</h2>
+            <img src="images/student-photo-placeholder.png" alt="Student Photo" class="profile-photo">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Student ID:</strong> 123456</p>
+            <p><strong>Class:</strong> Grade 10</p>
+        </section>
+
+        <section id="grades" class="card">
+            <h2>Grades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>A-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="attendance" class="card">
+            <h2>Attendance</h2>
+            <p><strong>Days Attended:</strong> 150</p>
+            <p><strong>Total Days:</strong> 180</p>
+            <p><strong>Attendance Rate:</strong> 83%</p>
+        </section>
+
+        <section id="fees" class="card">
+            <h2>Fees and Arrears</h2>
+            <p><strong>Total Fees:</strong> GHS 2000</p>
+            <p><strong>Paid:</strong> GHS 1500</p>
+            <p><strong>Arrears:</strong> GHS 500</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HAMBERT SCHOOL COMPLEX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

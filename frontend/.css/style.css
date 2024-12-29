@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #008000; /* Green theme hover effect */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #004d00; /* Deep green for contrast */
+    color: white;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .logo img {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #006600; /* Slightly lighter green */
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 270px; /* Leave space for the sidebar */
+    padding: 20px 40px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-content .welcome-note {
+    background-color: #e5f1e0;
+    border-left: 5px solid #004d00;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    color: #004d00;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mySlides {
+    display: none;
+    animation: fade 1.5s ease-in-out;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Slideshow Fade Animation */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Gallery Styles */
+#gallery {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9fcf8;
+    border: 1px solid #e1e7dd;
+    border-radius: 8px;
+}
+
+#gallery h3 {
+    color: #004d00;
+    margin-bottom: 15px;
+}
+
+#gallery .image-gallery img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #004d00;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-submit {
+    background-color: #004d00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #006600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 16px;
+    }
+}
