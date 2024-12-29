@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - HAMBERT SCHOOL COMPLEX</title>
     <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>  <!-- Link to your JavaScript -->
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         <h2>Login</h2>
         <p>Please select your role and log in to your account.</p>
 
-        <form action="dashboard.html" method="post" class="login-form">
+        <form id="loginForm" class="login-form">
             <div class="form-group">
                 <label for="role">Role:</label>
                 <select id="role" name="role" required>
@@ -47,6 +48,8 @@
             <p><a href="#">Forgot your password?</a></p>
             <p><a href="#">Need help logging in?</a></p>
         </div>
+
+        <p id="loginMessage"></p> <!-- To display login error messages -->
     </main>
 
     <footer>

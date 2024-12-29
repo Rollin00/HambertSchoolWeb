@@ -41,28 +41,17 @@
                         <th>Grade</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Mathematics</td>
-                        <td>A</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>B+</td>
-                    </tr>
-                    <tr>
-                        <td>Science</td>
-                        <td>A-</td>
-                    </tr>
+                <tbody id="grades-table">
+                    <!-- Dynamic data will be inserted here -->
                 </tbody>
             </table>
         </section>
 
         <section id="attendance" class="card">
             <h2>Attendance</h2>
-            <p><strong>Days Attended:</strong> 150</p>
+            <p><strong>Days Attended:</strong> <span id="attendance-days">150</span></p>
             <p><strong>Total Days:</strong> 180</p>
-            <p><strong>Attendance Rate:</strong> 83%</p>
+            <p><strong>Attendance Rate:</strong> <span id="attendance-rate">83%</span></p>
         </section>
 
         <section id="fees" class="card">
@@ -76,5 +65,8 @@
     <footer>
         <p>&copy; 2024 HAMBERT SCHOOL COMPLEX. All Rights Reserved.</p>
     </footer>
+
+    <!-- Include student-dashboard.js -->
+    <script src="student-dashboard.js"></script>
 </body>
 </html>

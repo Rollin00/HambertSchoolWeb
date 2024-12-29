@@ -11,7 +11,7 @@ public class Teacher {
 
     // Method to assign grades to students
     public void assignGrade(Student student, String grade) {
-        student.displayGrade();
+        student.setGrade(grade); // Assign grade to student
         System.out.println("Assigned grade: " + grade + " to student " + student.getName());
     }
 
@@ -25,7 +25,24 @@ public class Teacher {
         return teacherId;
     }
 
+    public void setTeacherId(String teacherId) {
+        this.teacherId = teacherId;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Optional: Override toString() for easier logging or printing
+    @Override
+    public String toString() {
+        return "Teacher{" +
+               "teacherId='" + teacherId + '\'' +
+               ", name='" + name + '\'' +
+               '}';
     }
 }

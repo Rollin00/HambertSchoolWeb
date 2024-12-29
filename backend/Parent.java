@@ -14,6 +14,8 @@ public class Parent {
         System.out.println("Tracking progress for " + student.getName());
         student.displayGrade();
         System.out.println("Attendance Status: " + student.getAttendanceStatus());
+        System.out.println("Fees Paid: " + student.getFeesPaid());
+        System.out.println("Remaining Fees Arrears: " + student.getFeesArrears());
     }
 
     // Method to communicate with teachers
@@ -26,7 +28,24 @@ public class Parent {
         return parentId;
     }
 
+    public void setParentId(String parentId) {
+        this.parentId = parentId;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Optional: Override toString() for easier logging or printing
+    @Override
+    public String toString() {
+        return "Parent{" +
+               "parentId='" + parentId + '\'' +
+               ", name='" + name + '\'' +
+               '}';
     }
 }

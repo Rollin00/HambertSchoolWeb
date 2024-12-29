@@ -14,12 +14,16 @@ public class Student {
         this.grade = "Not Available";
         this.attendanceStatus = "Not Recorded";
         this.feesPaid = 0;
-        this.feesArrears = 0;
+        this.feesArrears = 1000; // Initial arrears set to total fee
     }
 
     // Methods for grade display, attendance tracking, and fee management
     public void displayGrade() {
         System.out.println("Student Grade: " + grade);
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
     }
 
     public void updateAttendance(String status) {
@@ -28,9 +32,13 @@ public class Student {
     }
 
     public void updateFees(double amount) {
-        this.feesPaid += amount;
-        this.feesArrears = 1000 - this.feesPaid; // Example fee management
-        System.out.println("Fees updated. Remaining arrears: " + this.feesArrears);
+        if (amount + this.feesPaid <= 1000) { // Prevent overpayment
+            this.feesPaid += amount;
+            this.feesArrears = 1000 - this.feesPaid;
+            System.out.println("Fees updated. Remaining arrears: " + this.feesArrears);
+        } else {
+            System.out.println("Amount exceeds the total fees. Please adjust.");
+        }
     }
 
     // Getters and setters
@@ -38,7 +46,44 @@ public class Student {
         return studentId;
     }
 
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public String getAttendanceStatus() {
+        return attendanceStatus;
+    }
+
+    public double getFeesPaid() {
+        return feesPaid;
+    }
+
+    public double getFeesArrears() {
+        return feesArrears;
+    }
+
+    // Optional: Override toString() for easier logging or printing
+    @Override
+    public String toString() {
+        return "Student{" +
+               "studentId='" + studentId + '\'' +
+               ", name='" + name + '\'' +
+               ", grade='" + grade + '\'' +
+               ", attendanceStatus='" + attendanceStatus + '\'' +
+               ", feesPaid=" + feesPaid +
+               ", feesArrears=" + feesArrears +
+               '}';
     }
 }
